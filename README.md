@@ -18,7 +18,7 @@ Contestants list:
 
 ## Development
 
-install autocannon suitable for thrift
+install [autocannon](https://www.npmjs.com/package/@cooperhsiung/autocannon) suitable for thrift :warning:
 
 ```
 npm i @cooperhsiung/autocannon -g --force
@@ -32,7 +32,7 @@ npm run build
 
 start servers
 
-> all node servers run in single-thread.
+> all Node.js servers run in single-thread.
 
 ```
 node dist/http-koa.js
