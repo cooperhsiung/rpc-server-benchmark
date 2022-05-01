@@ -16,7 +16,7 @@ Contestants list:
 - [Round1](#Round1-result)
 - [Round2](#Round2-result)
 
-## Development
+## Run
 
 install [autocannon](https://www.npmjs.com/package/@cooperhsiung/autocannon) suitable for thrift at first :warning:
 
@@ -32,7 +32,7 @@ npm run build
 
 start servers
 
-> all Node.js servers run in single-thread.
+> all Node.js servers are run in single-thread.
 
 ```
 node dist/http-koa.js
@@ -550,7 +550,7 @@ All tests run on my MacBook Pro
 
 ```
 MacBook Pro (16-inch, 2019)
-2.6 GHz 六核Intel Core i7
+2.6 GHz 6C Intel Core i7
 16 GB 2667 MHz DDR4
 AMD Radeon Pro 5300M 4 GB
 Intel UHD Graphics 630 1536 MB
