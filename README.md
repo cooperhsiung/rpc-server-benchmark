@@ -18,7 +18,7 @@ Contestants list:
 
 ## Development
 
-install [autocannon](https://www.npmjs.com/package/@cooperhsiung/autocannon) suitable for thrift :warning:
+install [autocannon](https://www.npmjs.com/package/@cooperhsiung/autocannon) suitable for thrift at first :warning:
 
 ```
 npm i @cooperhsiung/autocannon -g --force
