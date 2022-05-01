@@ -1,0 +1,13 @@
+# Mac OS
+.DS_Store
+
+# node
+*.log
+log
+node_modules
+
+# build
+output/
+
+# Gulu
+typings/auto-generated

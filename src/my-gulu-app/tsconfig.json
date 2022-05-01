@@ -1,0 +1,8 @@
+{
+  "extends": "@gulu/style/tsconfig-gulu.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "output"
+  },
+  "exclude": ["node_modules", "static", "test", "output"]
+}
