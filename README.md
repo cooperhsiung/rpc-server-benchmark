@@ -55,10 +55,10 @@ autocannon http://127.0.0.1:3002/test  # express
 autocannon http://127.0.0.1:3003/test  # koa-suit
 autocannon http://127.0.0.1:3004/test  # golang-echo
 
-PROVIDER=/Users/Cooper/Code/rpc-server-benchmark/provider.js autocannon 127.0.0.1:4001
-PROVIDER=/Users/Cooper/Code/rpc-server-benchmark/provider.js autocannon 127.0.0.1:4002
-PROVIDER=/Users/Cooper/Code/rpc-server-benchmark/provider.js autocannon 127.0.0.1:4003
-PROVIDER=/Users/Cooper/Code/rpc-server-benchmark/provider.js autocannon 127.0.0.1:4004
+CLIENT_PROVIDER=/Users/Cooper/Code/rpc-server-benchmark/provider.js autocannon 127.0.0.1:4001
+CLIENT_PROVIDER=/Users/Cooper/Code/rpc-server-benchmark/provider.js autocannon 127.0.0.1:4002
+CLIENT_PROVIDER=/Users/Cooper/Code/rpc-server-benchmark/provider.js autocannon 127.0.0.1:4003
+CLIENT_PROVIDER=/Users/Cooper/Code/rpc-server-benchmark/provider.js autocannon 127.0.0.1:4004
 ```
 
 - http(koa)
@@ -172,7 +172,7 @@ Req/Bytes counts sampled once per second.
 - thrift(native)
 
 ```
-Cooper@CooperdeMBP rpc-server-benchmark % PROVIDER=/Users/Cooper/Code/rpc-server-benchmark/provider.js autocannon 127.0.0.1:4001
+Cooper@CooperdeMBP rpc-server-benchmark % CLIENT_PROVIDER=/Users/Cooper/Code/rpc-server-benchmark/provider.js autocannon 127.0.0.1:4001
 
 Running 10s test @ http://127.0.0.1:4001
 10 connections
@@ -200,7 +200,7 @@ Req/Bytes counts sampled once per second.
 - thrift(koa-suit)
 
 ```
-Cooper@CooperdeMBP rpc-server-benchmark % PROVIDER=/Users/Cooper/Code/rpc-server-benchmark/provider.js autocannon 127.0.0.1:4002
+Cooper@CooperdeMBP rpc-server-benchmark % CLIENT_PROVIDER=/Users/Cooper/Code/rpc-server-benchmark/provider.js autocannon 127.0.0.1:4002
 
 Running 10s test @ http://127.0.0.1:4002
 10 connections
@@ -228,7 +228,7 @@ Req/Bytes counts sampled once per second.
 - thrift(gulu)
 
 ```
-Cooper@CooperdeMBP rpc-server-benchmark % PROVIDER=/Users/Cooper/Code/rpc-server-benchmark/provider.js autocannon 127.0.0.1:4003
+Cooper@CooperdeMBP rpc-server-benchmark % CLIENT_PROVIDER=/Users/Cooper/Code/rpc-server-benchmark/provider.js autocannon 127.0.0.1:4003
 Running 10s test @ http://127.0.0.1:4003
 10 connections
 
@@ -255,7 +255,7 @@ Req/Bytes counts sampled once per second.
 - thrift(golang)
 
 ```
-Cooper@CooperdeMBP rpc-server-benchmark % PROVIDER=/Users/Cooper/Code/rpc-server-benchmark/provider.js autocannon 127.0.0.1:4004
+Cooper@CooperdeMBP rpc-server-benchmark % CLIENT_PROVIDER=/Users/Cooper/Code/rpc-server-benchmark/provider.js autocannon 127.0.0.1:4004
 Running 10s test @ http://127.0.0.1:4004
 10 connections
 
@@ -302,10 +302,10 @@ autocannon -c 20 -p 50 http://127.0.0.1:3002/test
 autocannon -c 20 -p 50 http://127.0.0.1:3003/test
 autocannon -c 20 -p 50 http://127.0.0.1:3004/test
 
-PROVIDER=/Users/Cooper/Code/rpc-server-benchmark/provider.js autocannon -c 20 -p 50 127.0.0.1:4001
-PROVIDER=/Users/Cooper/Code/rpc-server-benchmark/provider.js autocannon -c 20 -p 50 127.0.0.1:4002
-PROVIDER=/Users/Cooper/Code/rpc-server-benchmark/provider.js autocannon -c 20 -p 50 127.0.0.1:4003
-PROVIDER=/Users/Cooper/Code/rpc-server-benchmark/provider.js autocannon -c 20 -p 50 127.0.0.1:4004
+CLIENT_PROVIDER=/Users/Cooper/Code/rpc-server-benchmark/provider.js autocannon -c 20 -p 50 127.0.0.1:4001
+CLIENT_PROVIDER=/Users/Cooper/Code/rpc-server-benchmark/provider.js autocannon -c 20 -p 50 127.0.0.1:4002
+CLIENT_PROVIDER=/Users/Cooper/Code/rpc-server-benchmark/provider.js autocannon -c 20 -p 50 127.0.0.1:4003
+CLIENT_PROVIDER=/Users/Cooper/Code/rpc-server-benchmark/provider.js autocannon -c 20 -p 50 127.0.0.1:4004
 ```
 
 - http(koa)
@@ -423,7 +423,7 @@ Req/Bytes counts sampled once per second.
 - thrift(native)
 
 ```
-Cooper@CooperdeMBP rpc-server-benchmark % PROVIDER=/Users/Cooper/Code/rpc-server-benchmark/provider.js autocannon -c 20 -p 50 127.0.0.1:4001
+Cooper@CooperdeMBP rpc-server-benchmark % CLIENT_PROVIDER=/Users/Cooper/Code/rpc-server-benchmark/provider.js autocannon -c 20 -p 50 127.0.0.1:4001
 
 Running 10s test @ http://127.0.0.1:4001
 20 connections with 50 pipelining factor
@@ -451,7 +451,7 @@ Req/Bytes counts sampled once per second.
 - thrift(koa-suit)
 
 ```
-Cooper@CooperdeMBP rpc-server-benchmark % PROVIDER=/Users/Cooper/Code/rpc-server-benchmark/provider.js autocannon -c 20 -p 50 127.0.0.1:4002
+Cooper@CooperdeMBP rpc-server-benchmark % CLIENT_PROVIDER=/Users/Cooper/Code/rpc-server-benchmark/provider.js autocannon -c 20 -p 50 127.0.0.1:4002
 Running 10s test @ http://127.0.0.1:4002
 20 connections with 50 pipelining factor
 
@@ -478,7 +478,7 @@ Req/Bytes counts sampled once per second.
 - thrift(gulu)
 
 ```
-Cooper@CooperdeMBP rpc-server-benchmark % PROVIDER=/Users/Cooper/Code/rpc-server-benchmark/provider.js autocannon -c 20 -p 50 127.0.0.1:4003
+Cooper@CooperdeMBP rpc-server-benchmark % CLIENT_PROVIDER=/Users/Cooper/Code/rpc-server-benchmark/provider.js autocannon -c 20 -p 50 127.0.0.1:4003
 Running 10s test @ http://127.0.0.1:4003
 20 connections with 50 pipelining factor
 
@@ -505,7 +505,7 @@ Req/Bytes counts sampled once per second.
 - thrift(golang)
 
 ```
-Cooper@CooperdeMBP rpc-server-benchmark % PROVIDER=/Users/Cooper/Code/rpc-server-benchmark/provider.js autocannon -c 20 -p 50 127.0.0.1:4004
+Cooper@CooperdeMBP rpc-server-benchmark % CLIENT_PROVIDER=/Users/Cooper/Code/rpc-server-benchmark/provider.js autocannon -c 20 -p 50 127.0.0.1:4004
 Running 10s test @ http://127.0.0.1:4004
 20 connections with 50 pipelining factor
 
