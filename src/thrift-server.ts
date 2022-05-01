@@ -44,5 +44,5 @@ server.on('error', (e: any) => {
   // 如果 ECONNRESET，不管
 });
 
-server.listen(3004);
-console.log(path.basename(__filename), 'listening on 3004...');
+server.listen(4001);
+console.log(path.basename(__filename), 'listening on 4001...');

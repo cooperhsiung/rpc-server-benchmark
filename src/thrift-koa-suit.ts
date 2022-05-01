@@ -40,8 +40,8 @@ class AppModule {}
 
 async function bootstrap() {
   const app = await ThriftFactory.create(AppModule, { service: UnpkgService });
-  await app.listen(3005);
-  console.log(path.basename(__filename), 'listening on 3005...');
+  await app.listen(4002);
+  console.log(path.basename(__filename), 'listening on 4002...');
 }
 
 bootstrap();

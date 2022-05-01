@@ -26,5 +26,5 @@ const app = new ThriftApplication({
   },
 });
 
-app.load(ROOT).listen(process.env.PORT || 3006);
-console.log(path.basename(__filename), 'listening on 3006...');
+app.load(ROOT).listen(process.env.PORT || 4003);
+console.log(path.basename(__filename), 'listening on 4003...');
