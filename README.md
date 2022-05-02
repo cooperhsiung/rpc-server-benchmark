@@ -531,7 +531,7 @@ Req/Bytes counts sampled once per second.
 
 ## Round2 result
 
-result: 20 connection 50 pipelines
+result: 20 connections 50 pipelines
 
 | framework        | qps(avg) |
 | ---------------- | -------: |
